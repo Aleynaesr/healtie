@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healtie/core/models/cat_json.dart';
 import 'package:healtie/core/utility/constants.dart';
-import 'package:healtie/view/home/widgets/articleCard.dart';
 
 import 'categoryCard.dart';
 

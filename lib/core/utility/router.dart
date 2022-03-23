@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healtie/view/category/view/cat_page.dart';
 import 'package:healtie/view/discover/view/discover_page.dart';
 import 'package:healtie/view/home/view/home_page.dart';
-import 'package:healtie/view/profile/view/profile_page.dart';
+import 'package:healtie/view/profile/view/user/view/user_page.dart';
 
 import 'constants.dart';
 

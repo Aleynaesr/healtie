@@ -22,10 +22,11 @@ class MyApp extends StatelessWidget {
   Widget _buildApp(String appName){
     return GetMaterialApp(
       title: appName,
-      color: Colors.white,
+      color:black,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: primary,
+        backgroundColor: white,
         primaryColorBrightness: Brightness.dark,
       ),
       home: const RouterPage(),

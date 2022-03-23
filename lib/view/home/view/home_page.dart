@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:healtie/core/utility/constants.dart';
-import 'package:healtie/view/home/widgets/buildHomeAppBar.dart';
-import 'package:healtie/view/home/widgets/buildArticleCard.dart';
-import 'package:healtie/view/home/widgets/buildTopDoctors.dart';
+import 'package:healtie/view/home/widget/buildArticleCard.dart';
+import 'package:healtie/view/home/widget/buildHomeAppBar.dart';
+import 'package:healtie/view/home/widget/buildTopDoctors.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

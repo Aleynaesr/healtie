@@ -23,7 +23,7 @@ class BuildArticleTop extends StatelessWidget {
         image: DecorationImage(
           image: NetworkImage(articles[index]["banner"]),
           fit: BoxFit.cover,
-          colorFilter: ColorFilter.mode(Colors.black54, BlendMode.darken),
+          colorFilter: const ColorFilter.mode(Colors.black54, BlendMode.darken),
         ),
       ),
       child: Column(

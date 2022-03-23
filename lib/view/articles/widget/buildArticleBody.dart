@@ -29,6 +29,7 @@ class _BuildArticleBodyState extends State<BuildArticleBody> {
                   wordSpacing: 1,
                   letterSpacing: 0.8,
                   height: 2.2,
+                  color: black,
                   fontSize: 16),
             ),
           ),

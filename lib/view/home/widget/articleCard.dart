@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healtie/core/models/comments_json.dart';
 import 'package:healtie/core/utility/constants.dart';
 import 'package:healtie/view/articles/view/article_page.dart';
 

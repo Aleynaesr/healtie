@@ -5,7 +5,7 @@ const List doctors = [
     "https://listelist.com/wp-content/uploads/2018/10/anagorsell.jpg",
     "tag": "Bone Specialist",
     "score": "4.9",
-    "hospital": "Central Hospital"
+    "hospital": "Central Hospital",
   },
   {
     "name": "Dr. Gazi Yaşargil",
