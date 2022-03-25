@@ -1,29 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:healtie/core/models/articles_json.dart';
+import 'package:healtie/core/models/doctors_json.dart';
 import 'package:healtie/core/utility/constants.dart';
 
-import 'articleCard.dart';
+import 'doctorsCard.dart';
 
-class BuildArticles extends StatefulWidget {
-  const BuildArticles({Key? key}) : super(key: key);
+class BuildDoctorCard extends StatefulWidget {
+  const BuildDoctorCard({Key? key}) : super(key: key);
 
   @override
-  _BuildArticlesState createState() => _BuildArticlesState();
+  _BuildDoctorCardState createState() => _BuildDoctorCardState();
 }
 
-class _BuildArticlesState extends State<BuildArticles> {
+class _BuildDoctorCardState extends State<BuildDoctorCard> {
   @override
   Widget build(BuildContext context) {
     return ListView(
       scrollDirection: Axis.vertical,
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      children: List.generate(articles.length, (index) {
-        var store = articles[index];
+      children: List.generate(doctors.length, (index) {
+        var store = doctors[index];
         return Padding(
           padding: const EdgeInsets.only(
               bottom: 8, left: padding, right: padding, top: 8),
-          child: ArticleCard(
+          child: DoctorCard(
             store: store,
             index: index,
           ),

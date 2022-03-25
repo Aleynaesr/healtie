@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healtie/core/utility/constants.dart';
-import 'package:healtie/view/home/widget/buildArticleCard.dart';
-import 'package:healtie/view/profile/view/user/widgets/buildUserBody.dart';
-import 'package:healtie/view/profile/view/user/widgets/buildUserTop.dart';
+import 'package:healtie/view/profile/view/user/widget/buildUserBody.dart';
+import 'package:healtie/view/profile/view/user/widget/buildUserTop.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -24,7 +23,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 15,
               ),
               const BuildUserBody(),
-
             ],
           )
       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:healtie/core/models/doctors_json.dart';
 import 'package:healtie/core/utility/constants.dart';
+import 'package:healtie/view/doctors/view/doctors_page.dart';
 
 Widget buildTopDoctors() {
   return Builder(builder: (context) {
@@ -18,17 +20,17 @@ Widget buildTopDoctors() {
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Text(
+                  children:   [
+                    const Text(
                       "Top Doctors",
                       style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: subtitleSize),
                     ),
                     TextButton(
-                      onPressed: null,
-                      child: Text(
+                      onPressed: () => Get.to(() => const DoctorsPage()),
+                      child: const Text(
                         "View All",
-                        style: TextStyle(
+                        style: TextStyle(color: lightBlack,
                             fontWeight: FontWeight.bold, fontSize: 12),
                       ),
                     )

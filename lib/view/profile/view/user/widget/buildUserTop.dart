@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healtie/core/models/users_json.dart';
 import 'package:healtie/core/utility/constants.dart';
@@ -8,7 +7,7 @@ Widget buildUserTop() {
     return Column(
       children: List.generate(users.length, (index) {
         return Padding(
-          padding: const EdgeInsets.only(left: padding, right: 5.0, top: 15.0),
+          padding: const EdgeInsets.only(left: padding, top: 15.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -16,7 +15,7 @@ Widget buildUserTop() {
               Row(
                 children: [
                   CircleAvatar(
-                    radius: 60,
+                    radius: 50,
                     backgroundColor: black,
                     backgroundImage: NetworkImage(
                       users[index]["author_img"],
@@ -63,7 +62,9 @@ Widget buildUserTop() {
                                       users[index]["following"],
                                       style: const TextStyle(color: black),
                                     ),
-                                    const SizedBox(height: 2,),
+                                    const SizedBox(
+                                      height: 2,
+                                    ),
                                     const Text(
                                       "Following",
                                       style: TextStyle(color: black),
@@ -73,7 +74,9 @@ Widget buildUserTop() {
                               ],
                             ),
                           ),
-                          const SizedBox(width: 22,),
+                          const SizedBox(
+                            width: 22,
+                          ),
                           Container(
                             width: 80,
                             height: 60,
@@ -99,7 +102,9 @@ Widget buildUserTop() {
                                       users[index]["saved"],
                                       style: const TextStyle(color: black),
                                     ),
-                                    const SizedBox(height: 2,),
+                                    const SizedBox(
+                                      height: 2,
+                                    ),
                                     const Text(
                                       "Saved",
                                       style: TextStyle(color: black),
