@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healtie/core/models/doctors_json.dart';
 import 'package:healtie/core/utility/constants.dart';
 
 class BuildAbout extends StatefulWidget {
@@ -32,6 +33,45 @@ class _BuildAboutState extends State<BuildAbout> {
             ),
           ],
           borderRadius: BorderRadius.circular(15),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(
+              left: padding, right: padding, top: 10, bottom: padding),
+          child: Column(
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: const <Widget>[
+                  Icon(
+                    Icons.business_center,
+                    color: primary,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    "About",
+                    style: TextStyle(
+                        color: black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: padding),
+                child: Text(
+                  doctors[widget.index]["about"],
+                  style: const TextStyle(
+                      wordSpacing: 0.5,
+                      letterSpacing: 0.2,
+                      height: 1.3,
+                      color: black,
+                      fontSize: 16),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

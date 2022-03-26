@@ -20,117 +20,147 @@ class BuildDoctorTop extends StatefulWidget {
 class _BuildDoctorTopState extends State<BuildDoctorTop> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      child: Padding(
-        padding: const EdgeInsets.only(left: padding),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            CircleAvatar(
-              radius: 50,
-              backgroundColor: black,
-              backgroundImage: NetworkImage(
-                doctors[widget.index]["image"],
+    return Padding(
+      padding: const EdgeInsets.only(left: padding, right:padding),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          CircleAvatar(
+            radius: 50,
+            backgroundColor: black,
+            backgroundImage: NetworkImage(
+              doctors[widget.index]["image"],
+            ),
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    width: 80,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.3),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: const Offset(0, 3),
+                        ),
+                      ],
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              doctors[widget.index]["following"],
+                              style: const TextStyle(color: black),
+                            ),
+                            const SizedBox(
+                              height: 2,
+                            ),
+                            const Text(
+                              "Followers",
+                              style: TextStyle(color: black),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 22,
+                  ),
+                  Container(
+                    width: 80,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.3),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: const Offset(0, 3),
+                        ),
+                      ],
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              doctors[widget.index]["articles"],
+                              style: const TextStyle(color: black),
+                            ),
+                            const SizedBox(
+                              height: 2,
+                            ),
+                            const Text(
+                              "Articles",
+                              style: TextStyle(color: black),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
+                ],
               ),
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      width: 80,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
-                        borderRadius: BorderRadius.circular(15),
+              const SizedBox(height: 20,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      const Icon(
+                        Icons.location_on,
+                        color: primary,
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                doctors[widget.index]["following"],
-                                style: const TextStyle(color: black),
-                              ),
-                              const SizedBox(
-                                height: 2,
-                              ),
-                              const Text(
-                                "Followers",
-                                style: TextStyle(color: black),
-                              ),
-                            ],
-                          ),
-                        ],
+                      const SizedBox(
+                        width: 2,
                       ),
-                    ),
-                    const SizedBox(
-                      width: 22,
-                    ),
-                    Container(
-                      width: 80,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
-                        borderRadius: BorderRadius.circular(15),
+                      Text(
+                        doctors[widget.index]["hospital"] ,
+                        style:
+                        const TextStyle(color: black, fontSize: 12),
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                doctors[widget.index]["articles"],
-                                style: const TextStyle(color: black),
-                              ),
-                              const SizedBox(
-                                height: 2,
-                              ),
-                              const Text(
-                                "Articles",
-                                style: TextStyle(color: black),
-                              ),
-                            ],
-                          ),
-                        ],
+                    ],
+                  ),
+                  const SizedBox(width: 22,),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      const Icon(
+                        Icons.medical_services,
+                        color: primary,
                       ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 20,),
-                Text(
-                  doctors[widget.index]["name"],
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: subtitleSize),
-                ),
-              ],
-            ),
-            const SizedBox(
-              width: 32,
-            ),
-          ],
-        ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        doctors[widget.index]["tag"] ,
+                        style:
+                        const TextStyle(color: black, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+        ],
       ),
     );
   }

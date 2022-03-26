@@ -5,7 +5,8 @@ const List doctors = [
     "tag": "Bone Specialist",
     "hospital": "Central Hospital",
     "following": "100",
-    "articles": "100"
+    "articles": "100",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
   },
   {
     "name": "Dr. Gazi Yaşargil",
@@ -14,7 +15,8 @@ const List doctors = [
     "tag": "Neurosurgeon",
     "hospital": "Central Hospital",
     "following": "100",
-    "articles": "10"
+    "articles": "10",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
   },
   {
     "name": "Dr. Ömer Özkan",
@@ -23,7 +25,8 @@ const List doctors = [
     "tag": "Cardiologist",
     "hospital": "Central Hospital",
     "following": "10",
-    "articles": "100"
+    "articles": "100",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
   },
   {
     "name": "Dr. Hande Özdinler",
@@ -31,7 +34,8 @@ const List doctors = [
     "tag": "Bone Specialist",
     "hospital": "Central Hospital",
     "following": "100",
-    "articles": "100"
+    "articles": "100",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
   },
   {
     "name": "Dr. Gazi Yaşargil",
@@ -40,7 +44,9 @@ const List doctors = [
     "tag": "Neurosurgeon",
     "hospital": "Central Hospital",
     "following": "10",
-    "articles": "100"
+    "articles": "100",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+
   },
   {
     "name": "Dr. Ömer Özkan",
@@ -49,7 +55,9 @@ const List doctors = [
     "tag": "Cardiologist",
     "hospital": "Central Hospital",
     "following": "10",
-    "articles": "10"
+    "articles": "10",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+
   },
   {
     "name": "Dr. Hande Özdinler",
@@ -57,7 +65,9 @@ const List doctors = [
     "tag": "Bone Specialist",
     "hospital": "Central Hospital",
     "following": "10",
-    "articles": "100"
+    "articles": "100",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+
   },
   {
     "name": "Dr. Gazi Yaşargil",
@@ -66,7 +76,9 @@ const List doctors = [
     "tag": "Neurosurgeon",
     "hospital": "Central Hospital",
     "following": "10",
-    "articles": "100"
+    "articles": "100",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+
   },
   {
     "name": "Dr. Ömer Özkan",
@@ -75,6 +87,8 @@ const List doctors = [
     "tag": "Cardiologist",
     "hospital": "Central Hospital",
     "following": "100",
-    "articles": "10"
+    "articles": "10",
+    "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+
   },
 ];
