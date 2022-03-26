@@ -27,7 +27,7 @@ class BuildUserBody extends StatelessWidget {
               crossAxisCount: 2,
               crossAxisSpacing: 15,
               mainAxisSpacing: 15,
-              mainAxisExtent: 160,
+              mainAxisExtent: 210,
             ),
             children: List.generate(articles.length, (index) {
               var store = articles[index];

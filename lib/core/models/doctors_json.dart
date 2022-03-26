@@ -7,6 +7,8 @@ const List doctors = [
     "following": "100",
     "articles": "100",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
   },
   {
     "name": "Dr. Gazi Yaşargil",
@@ -17,6 +19,8 @@ const List doctors = [
     "following": "100",
     "articles": "10",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
   },
   {
     "name": "Dr. Ömer Özkan",
@@ -27,6 +31,8 @@ const List doctors = [
     "following": "10",
     "articles": "100",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
   },
   {
     "name": "Dr. Hande Özdinler",
@@ -36,6 +42,8 @@ const List doctors = [
     "following": "100",
     "articles": "100",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
   },
   {
     "name": "Dr. Gazi Yaşargil",
@@ -46,6 +54,8 @@ const List doctors = [
     "following": "10",
     "articles": "100",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
 
   },
   {
@@ -57,6 +67,8 @@ const List doctors = [
     "following": "10",
     "articles": "10",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
 
   },
   {
@@ -67,6 +79,8 @@ const List doctors = [
     "following": "10",
     "articles": "100",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
 
   },
   {
@@ -78,7 +92,8 @@ const List doctors = [
     "following": "10",
     "articles": "100",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
-
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
   },
   {
     "name": "Dr. Ömer Özkan",
@@ -89,6 +104,7 @@ const List doctors = [
     "following": "100",
     "articles": "10",
     "about":"Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
-
+    "university":"Ankara Yıldırım Beyazıt University",
+    "date":"23 Sep - 12 Oct"
   },
 ];

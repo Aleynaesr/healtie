@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,16 +18,16 @@ class SavedCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height:100,
+      width: 210,
+      height: 210,
       decoration: BoxDecoration(
         color: white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.3),
-            spreadRadius: 5,
-            blurRadius:7,
-            offset: const Offset(0, 3),
+            color: Colors.grey.withOpacity(0.1),
+            spreadRadius:4,
+            blurRadius: 6,
+            offset: const Offset(3, 3),
           ),
         ],
         borderRadius: BorderRadius.circular(15),
@@ -57,24 +58,23 @@ class SavedCard extends StatelessWidget {
                       color: black, fontWeight: FontWeight.bold, fontSize: 15)),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(5),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                FittedBox(
-                  fit: BoxFit.fitWidth,
-                  child: Text("#" + store["cat"],
-                      style: const TextStyle(color: primary, fontSize: 12)),
-                ),
-                FittedBox(
-                  fit: BoxFit.fitWidth,
-                  child: Text("By " + store["author"],
-                      style: const TextStyle(color: black, fontSize: 9)),
-                ),
-              ],
-            ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
+                padding: const EdgeInsets.only(left: 12, right: 8, top: 8, bottom: 5),
+                width: 160,
+                child: Text(store["description"],
+                    style: const TextStyle(color: black, fontSize: 12)),
+              ),
+              FittedBox(
+                fit: BoxFit.fitWidth,
+                child: Text("By " + store["author"],
+                    style: const TextStyle(color: primary, fontSize:10)),
+              ),
+            ],
           ),
+
         ]),
       ),
     );

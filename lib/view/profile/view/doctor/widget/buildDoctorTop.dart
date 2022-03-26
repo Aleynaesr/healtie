@@ -21,7 +21,7 @@ class _BuildDoctorTopState extends State<BuildDoctorTop> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: padding, right:padding),
+      padding: const EdgeInsets.only(left: padding, right:padding, top:5),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

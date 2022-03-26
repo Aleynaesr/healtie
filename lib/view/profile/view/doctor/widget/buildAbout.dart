@@ -21,7 +21,7 @@ class _BuildAboutState extends State<BuildAbout> {
       padding: const EdgeInsets.all(padding),
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 120,
+        height: 100,
         decoration: BoxDecoration(
           color: white,
           boxShadow: [
@@ -36,7 +36,7 @@ class _BuildAboutState extends State<BuildAbout> {
         ),
         child: Padding(
           padding: const EdgeInsets.only(
-              left: padding, right: padding, top: 10, bottom: padding),
+              left: padding, right: padding, top: 10, bottom: 10),
           child: Column(
             children: [
               Row(
@@ -59,7 +59,7 @@ class _BuildAboutState extends State<BuildAbout> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: padding),
+                padding: const EdgeInsets.only(top: 10),
                 child: Text(
                   doctors[widget.index]["about"],
                   style: const TextStyle(

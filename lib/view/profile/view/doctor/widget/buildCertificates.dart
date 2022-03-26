@@ -22,7 +22,7 @@ class _BuildCertificatesState extends State<BuildCertificates> {
           const EdgeInsets.only(left: padding, right: padding, bottom: padding),
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: 150,
+        height: 100,
         decoration: BoxDecoration(
           color: white,
           boxShadow: [
@@ -51,7 +51,7 @@ class _BuildCertificatesState extends State<BuildCertificates> {
                     width: 5,
                   ),
                   Text(
-                    "About",
+                    "Experiences",
                     style: TextStyle(
                         color: black,
                         fontWeight: FontWeight.bold,
@@ -65,9 +65,8 @@ class _BuildCertificatesState extends State<BuildCertificates> {
                     scrollDirection: Axis.horizontal,
                     children: [
                       Container(
-                        width: 120,
-                        height: 50,
-                        padding: const EdgeInsets.all(10),
+                        width: 80,
+                        padding: const EdgeInsets.only(top: 8, right: 8),
                         child: ClipRRect(
                           borderRadius:
                               const BorderRadius.all(Radius.circular(15)),
@@ -78,9 +77,8 @@ class _BuildCertificatesState extends State<BuildCertificates> {
                         ),
                       ),
                       Container(
-                        width: 100,
-                        height: 50,
-                        padding: const EdgeInsets.all(8),
+                        width: 80,
+                        padding: const EdgeInsets.only(top: 8,right: 8),
                         child: ClipRRect(
                           borderRadius:
                           const BorderRadius.all(Radius.circular(15)),
@@ -91,9 +89,8 @@ class _BuildCertificatesState extends State<BuildCertificates> {
                         ),
                       ),
                       Container(
-                        width: 100,
-                        height: 50,
-                        padding: const EdgeInsets.all(8),
+                        width: 80,
+                        padding: const EdgeInsets.only(top: 8,right: 8),
                         child: ClipRRect(
                           borderRadius:
                           const BorderRadius.all(Radius.circular(15)),
@@ -104,9 +101,8 @@ class _BuildCertificatesState extends State<BuildCertificates> {
                         ),
                       ),
                       Container(
-                        width: 100,
-                        height: 50,
-                        padding: const EdgeInsets.all(8),
+                        width: 80,
+                        padding: const EdgeInsets.only(top: 8,right: 8),
                         child: ClipRRect(
                           borderRadius:
                           const BorderRadius.all(Radius.circular(15)),
@@ -117,9 +113,8 @@ class _BuildCertificatesState extends State<BuildCertificates> {
                         ),
                       ),
                       Container(
-                        width: 100,
-                        height: 50,
-                        padding: const EdgeInsets.all(8),
+                        width: 80,
+                        padding: const EdgeInsets.only(top: 8),
                         child: ClipRRect(
                           borderRadius:
                           const BorderRadius.all(Radius.circular(15)),
